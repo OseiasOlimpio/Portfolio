@@ -8,19 +8,41 @@
 	<title>Oséias Olimpio</title>
 </head>
 <body>
-	<div class="caixa-principal" id="home">
-		<nav>
-			<h2 class="portifolio">Portfo<span>lio</span></h2>
-			<ul>
-				<li><a class="link-menu" href="#home">Home</a></li>
-				<li><a class="link-menu" href="#sobre">Sobre</a></li>
-				<li><a class="link-menu" href="#projetos-id">Projetos</a></li>
-				<li><a class="link-menu" href="#fale-comigo">Fale Comigo</a></li>
-			</ul>
+	<header>
+		<nav class='nav-bar'>
+			<div class="logo">
+				<h1>Port<span>fólio</span></h1>
+			</div>
+
+			<div class="nav-list">
+				<ul>
+					<li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+					<li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+					<li class="nav-item"><a href="#projetos-id" class="nav-link">Projetos</a></li>
+					<li class="nav-item"><a href="#fale-comigo" class="nav-link">Fale Comigo</a></li>
+				</ul>
+			</div>
+
+			<div class="mobile-menu-icon">
+				<button onclick="menuShow()"><img class='icon' src="img/menu_white_36dp.svg"></button>
+			</div>
 		</nav>
 
+		<div class="mobile-menu">
+			<ul>
+				<li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+				<li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+				<li class="nav-item"><a href="#projetos-id" class="nav-link">Projetos</a></li>
+				<li class="nav-item"><a href="#fale-comigo" class="nav-link">Fale Comigo</a></li>
+			</ul>
+			
+		</div>
+	</header>
+<script src="assets/js/script.js"></script>
+	
+	<div class="caixa-principal" id="home">
 		<div class="meu-nome">
-			<h1>Oséias <span data-text="Olimpio">Olimpio</span></h1>
+			<h1>Oséias Olimpio</h1>
 			<h3>Desenvolvedor Web</h3>
 		</div>
 	</div>
@@ -89,6 +111,5 @@
 		</div>
 	</footer>
 		
-	
 </body>
 </html>
