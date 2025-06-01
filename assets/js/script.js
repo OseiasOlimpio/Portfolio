@@ -11,8 +11,11 @@ function menuShow() {
 }
 
 // dados do formulario
+document.getElementById("formContato").addEventListener("submit", enviaFormulario);
+
 function enviaFormulario(event) {
-  event.preventDefault();
+  event.preventDefault(); // evita o envio padrão
+
   const nome = document.getElementById("nome").value;
   const email = document.getElementById("email").value;
   const telefone = document.getElementById("telefone").value;
@@ -22,10 +25,7 @@ function enviaFormulario(event) {
 
   const numeroWhatsApp = "87991097719";
 
-  const urlWhatsapp = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${encodeURIComponent(
-    mensagem
-  )}`;
-  window.open(urlWhatsapp, "_blank");
+  const urlWhatsapp = `https://api.whatsapp.com/send?phone=${numeroWhatsApp}&text=${encodeURIComponent(mensagem)}`;
 
-  document.getElementById("formContato").addEventListener("submit", enviaFormulario);
+  window.open(urlWhatsapp, "_blank");
 }
