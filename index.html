@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
 	<link rel="stylesheet" href="./css/style.css">
 	<title>Oséias Olimpio</title>
 </head>
+
 <body>
 	<header>
 		<nav class='nav-bar'>
@@ -35,11 +37,11 @@
 				<li class="nav-item"><a href="#projetos-id" class="nav-link">Projetos</a></li>
 				<li class="nav-item"><a href="#fale-comigo" class="nav-link">Fale Comigo</a></li>
 			</ul>
-			
+
 		</div>
 	</header>
-<script src="assets/js/script.js"></script>
-	
+	<script src="assets/js/script.js"></script>
+
 	<div class="caixa-principal" id="home">
 		<div class="meu-nome">
 			<h1>Oséias Olimpio</h1>
@@ -52,10 +54,12 @@
 
 		<div>
 			<h2>Sobre mim</h2>
-			<p>Apaixonado por tecnologia desde pequeno, me aprofundando na área de programação desde 2022, iniciando com Python, ate conhecer o mundo do desenvolvimento Web e me interessar pela area, atualmente aprendendo HTML, CSS e JavaScript<br>
-			Marido de uma mulher incrivel e pai de um lindo menino.
-			Buscando oportunidades para aumentar mais o conhecimento na área.</p>
-		<button><a href="https://wa.me/5587991773126" target='_blank'>Entre em contato</a></button>
+			<p>Apaixonado por tecnologia desde pequeno, me aprofundando na área de programação desde 2022, iniciando com
+				Python, ate conhecer o mundo do desenvolvimento Web e me interessar pela area, atualmente aprendendo
+				HTML, CSS e JavaScript<br>
+				Marido de uma mulher incrivel e pai de um lindo menino.
+				Buscando oportunidades para aumentar mais o conhecimento na área.</p>
+			<button><a href="https://wa.me/5587991773126" target='_blank'>Entre em contato</a></button>
 		</div>
 	</section>
 
@@ -68,10 +72,10 @@
 				<img src="img/NIR.png">
 				<h5>Nucleo Interno de Regulação</h5>
 				<p>Site com informações sobre o Nucleo
-				Interno de Regulação do Hospital Dom
-				Malan em Petrolina-Pe. O que é, a
-				equipe que compõe o setor e documentos
-				relacionados ao setor</p>
+					Interno de Regulação do Hospital Dom
+					Malan em Petrolina-Pe. O que é, a
+					equipe que compõe o setor e documentos
+					relacionados ao setor</p>
 				</p>
 				<a href="https://oseiasolimpio.github.io/NIR-Dom-Malan/index.html" target="_blank">Ver Projeto</a>
 			</div>
@@ -93,24 +97,38 @@
 			</div>
 		</div>
 	</div>
-		
+
+	<section id="formContato">
+		<form id="contato" action="script.js" method="post">
+			<label for="name">Nome</label>			
+			<input type="text" placeholder="Seu Nome" name="nome" id="nome">
+			<label for="email">E-mail</label>
+			<input type="text" placeholder="E-mail" name="email" id="email">
+			<label for="tel">Telefone</label>
+			<input type="tel" placeholder="Numero para contato" name="tel" id="telefone">
+			<label for="descricao">Projeto</label>
+			<textarea name="descricao" id="projeto" placeholder="Descreva o projeto" rows="5"></textarea>
+			<button type="submit" onclick="enviaFormulario()" id="btn">Enviar</button>
+		</form>
+	</section>
+
 	<footer id="fale-comigo">
 		<h5>Oséias Olimpio</h5>
 		<p>Para mais informações</p>
 
 		<div class="social">
 			<a href="https://github.com/OseiasOlimpio" target="_blank">
-				<img src='./img/github.png'/>
+				<img src='./img/github.png' />
 			</a>
-			<a href="https://www.linkedin.com/in/oseias-olimpio-1b92802b0/" 
-				target="_blank">
-				<img src='./img/linkedin.png'/>
+			<a href="https://www.linkedin.com/in/oseias-olimpio-1b92802b0/" target="_blank">
+				<img src='./img/linkedin.png' />
 			</a>
 			<a href="https://w.app/EsBS3g" target="_blank">
-				<img src="./img/whatsapp.png"/>
+				<img src="./img/whatsapp.png" />
 			</a>
 		</div>
 	</footer>
-		
+
 </body>
+
 </html>
