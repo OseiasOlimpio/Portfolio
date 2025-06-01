@@ -12,7 +12,7 @@ function menuShow() {
 
 // dados do formulario
 function enviaFormulario(event) {
-  e.preventDefault();
+  event.preventDefault();
   const nome = document.getElementById("nome").value;
   const email = document.getElementById("email").value;
   const telefone = document.getElementById("telefone").value;
